@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  color: black;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 3rem;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.texts > p {
+  margin: 0 !important;
+  padding: 0;
+  line-height: 0%;
+}
+
+.imgContainer {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  top: 0;
+}
+
+.header {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactBtn {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: none;
+  border-radius: 3rem;
+  background-color: var(--orange);
+  color: white;
+  gap: 1rem;
+  transition: scale 0.5s ease;
+}
+
+.contactBtn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactBtn:hover {
+  scale: 1.1;
+}
+
+.header img {
+  align-self: flex-start;
+}
+
+.btns {
+  display: flex;
+  gap: 2rem;
+}
+
+.btns button {
+  transition: scale 0.5s ease;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.btns button span {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btns button:first-child {
+  background-color: var(--orange);
+  color: white;
+}
+
+.btns button:hover {
+  scale: 1.1;
+}
+
+.btns button:last-child {
+  color: var(--orange);
+  background-color: transparent;
+  border: 2px solid var(--orange);
+}
+
+.bouncingBall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.bouncingBallInner {
+  width: 2rem;
+  height: 2rem;
+  border: 2.5px solid var(--orange);
+  border-radius: 50%;
+  animation: bounce 0.5s infinite alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--orange);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1rem);
+  }
+}
